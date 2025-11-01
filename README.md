@@ -1,4 +1,5 @@
 # LYRA-Macropad-Work-in-Progress-
+
 Macropad on custom PCB 
 
 # Overview
@@ -35,3 +36,10 @@ Optional USB-C connector
 Support for battery operation and low-power sleep modes
 
 Case design refinements for 3D printing or CNC milling
+
+# PCB Top Side View
+
+This PCB is only for prototyping purposes. The final build will feature MCU directly on the PCB without the development board.
+
+<img width="943" height="939" alt="image" src="https://github.com/user-attachments/assets/c1686d3c-ef30-43cc-85ea-c9288f66ca6f" />
+
