@@ -5,7 +5,7 @@ Macropad on custom PCB
 # Overview
 
 A compact 9-key macropad featuring a clickable rotary encoder and a 1-inch monochrome OLED display for mode indication and visual feedback.
-Originally based on an Arduino Pro Micro, the final version integrates the microcontroller directly onto a custom PCB, improving reliability, cable management, and design cohesion.
+Originally based on Seeed Xiao RP2040, the final version integrates the microcontroller directly onto a custom PCB, improving reliability, cable management, and design cohesion.
 
 # Features
 
@@ -13,7 +13,7 @@ Originally based on an Arduino Pro Micro, the final version integrates the micro
 
 * Rotary encoder with a clickable knob for mode switching
 
-* Four programmable modes, for example:
+* Three programmable modes, for example:
 
    * Music control (volume, play/pause, next/prev)
 
@@ -25,11 +25,11 @@ Originally based on an Arduino Pro Micro, the final version integrates the micro
 
 * Fully custom PCB (in development) replacing the Arduino Pro Micro
 
-Designed for QMK/VIA or Arduino firmware
+Designed for QMK/VIA or custom firmware (in the making)
 
 # Planned Improvements
 
-* Integrated ATmega32U4 MCU directly on PCB
+* Integrated ATmega32U4 or RP2040 MCU directly on PCB
 
 * Optional USB-C connector
 
@@ -41,8 +41,11 @@ Designed for QMK/VIA or Arduino firmware
 
 This PCB is only for prototyping purposes. The final build will feature MCU directly on the PCB without the development board.
 
-<img width="1315" height="1177" alt="image" src="https://github.com/user-attachments/assets/8776c888-d379-4e89-a7f6-f5ac97b3565d" />
+<img width="841" height="1080" alt="image" src="https://github.com/user-attachments/assets/c8f6be52-8c69-4657-b88e-8e80c2456e7e" />
 
+# PCB Bottom Side View
+
+<img width="856" height="1097" alt="image" src="https://github.com/user-attachments/assets/7d2ac949-f14a-4330-ae81-ade45182466d" />
 
 # Update - 04.11.2025
 
@@ -50,8 +53,9 @@ Moved diodes from top layer to the bottom. Added diode to the encoder. Added hot
 
 <img width="1273" height="1184" alt="image" src="https://github.com/user-attachments/assets/fd10bc57-435f-4a0a-95c3-5d14a696481f" />
 
-# Update - 09.11.2025
+# Update - 11.11.2025
 
-Replaced Arduino Micro with Arduino Pro Micro. Board will be sent to production soon.
+Replaced Arduino Micro with Seeed Xiao RP2040. Upgrading to this microcontroller led to smaller board size and lower cost. Board will be sent to production soon.
+
 
 
