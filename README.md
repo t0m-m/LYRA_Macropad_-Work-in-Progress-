@@ -57,5 +57,13 @@ Moved diodes from top layer to the bottom. Added diode to the encoder. Added hot
 
 Replaced Arduino Micro with Seeed Xiao RP2040. Upgrading to this microcontroller led to smaller board size and lower cost. Board will be sent to production soon.
 
+# Update - 27.11.2025
 
+Boards are finally here! Started the process of soldering and assembly. Still waiting for the Xiao Seed microcontroller.
+
+![20251126_154215 (1)](https://github.com/user-attachments/assets/b03aa974-47b0-4ead-8dac-3359985919a2)
+
+Bottom View
+
+![20251126_154226 (1)](https://github.com/user-attachments/assets/03d9bc9f-2c4b-40f6-acfe-eafb62b8a6da)
 
