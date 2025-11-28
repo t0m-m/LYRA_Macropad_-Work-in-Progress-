@@ -5,7 +5,7 @@ Macropad on custom PCB
 # Overview
 
 A compact 9-key macropad featuring a clickable rotary encoder and a 1-inch monochrome OLED display for mode indication and visual feedback.
-Originally based on Seeed Xiao RP2040, the final version integrates the microcontroller directly onto a custom PCB, improving reliability, cable management, and design cohesion.
+Originally based on Seeed Xiao RP2040, the final version integrates the RP2040 directly onto a custom PCB.
 
 # Features
 
@@ -21,9 +21,7 @@ Originally based on Seeed Xiao RP2040, the final version integrates the microcon
 
    * Media / general desktop shortcuts
 
-* 1-inch OLED display for mode display and live status feedback
-
-* Fully custom PCB (in development) replacing the Arduino Pro Micro
+* 1-inch OLED display for mode display and live status
 
 Designed for QMK/VIA or custom firmware (in the making)
 
@@ -59,7 +57,7 @@ Replaced Arduino Micro with Seeed Xiao RP2040. Upgrading to this microcontroller
 
 # Update - 27.11.2025
 
-Boards are finally here! Started the process of soldering and assembly. Still waiting for the Xiao Seed microcontroller.
+Boards are finally here! Started the process of soldering and assembly. Still waiting for the Xiao Seeed microcontroller.
 
 ![20251126_154215 (1)](https://github.com/user-attachments/assets/b03aa974-47b0-4ead-8dac-3359985919a2)
 
