@@ -67,4 +67,4 @@ Bottom View
 
 # Update - 13.01.2026
 
-Unfortunately there's been a mistake in schematic and switch built in the rotary encoder and top left corner switch are connected between the same row and column, therefore the computer will be unable to tell which is which, so they act like the same button. Fortunately, the rotary action of the encoder is wired correctly. 
+Unfortunately there's been a mistake in schematic and switch built in the rotary encoder and top left corner switch are connected between the same row and column, therefore the computer will be unable to tell which is which, so they act like the same button. Fortunately, the rotary action of the encoder is wired correctly. Started working on software.
