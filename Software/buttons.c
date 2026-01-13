@@ -3,26 +3,9 @@
 #include "hardware/i2c.h"
 #include "hardware/timer.h"
 #include "hardware/clocks.h"
+#include "buttons.h"
 
-//i2c pins
-#define I2C_PORT i2c0
-#define I2C_SDA 6
-#define I2C_SCL 7
-
-//row pins
-#define ROW_0 3
-#define ROW_1 28
-#define ROW_2 29
-
-//column pins
-#define COL_0 2
-#define COL_1 4
-#define COL_2 0
-
-//rotary encoder pins NIE BEDZIE DZIALAC WCISKANIE ENCODERA!
-#define ROT_0 27
-#define ROT_1 26
-
+//inicjalizacja przyciskow
 void init_buttons(){
     //row inits
     gpio_init(ROW_0);
@@ -37,10 +20,12 @@ void init_buttons(){
     gpio_init(COL_0);
     gpio_init(COL_1);
     gpio_init(COL_2);
+
     //ustawiamy columny jako inputy i bedziemy patrzec czy ktorys przycisk w danym wierszu nie jest wcisniety
     gpio_set_dir(COL_0, GPIO_IN); 
     gpio_set_dir(COL_1, GPIO_IN);
     gpio_set_dir(COL_2, GPIO_IN);
+
     //pullupy na columnach, przy wcisnieciu przycisku, przycisk zwiera coluimne z rowem przez co bedzie stan 0
     gpio_pull_up(COL_0);
     gpio_pull_up(COL_1);
@@ -52,7 +37,7 @@ void init_buttons(){
     gpio_set_dir(ROT_0, GPIO_IN);
     gpio_set_dir(ROT_1, GPIO_IN);
 
-}
+};
 
 //funkcja do skanowania matrycy
 int matrix_scan(int row_table[3], int column_table[3], int buttons_pressed[3][3]){
@@ -74,21 +59,4 @@ int matrix_scan(int row_table[3], int column_table[3], int buttons_pressed[3][3]
         }
         gpio_put(row_table[x], 1);
     }
-}
-
-int main()
-{
-    int buttons_pressed[3][3];
-    int row_table[3] = {ROW_0, ROW_1, ROW_2};
-    int column_table[3] = {COL_0, COL_1, COL_2};
-
-    stdio_init_all();
-
-    // I2C Initialisation. Using it at 400Khz.
-    i2c_init(I2C_PORT, 400*1000);
-    
-    gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-    gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
-    gpio_pull_up(I2C_SDA);
-    gpio_pull_up(I2C_SCL);
-}
+};
