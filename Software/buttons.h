@@ -17,5 +17,6 @@
 
 void init_buttons(void);
 int matrix_scan(int row_table[3], int column_table[3], int buttons_pressed[3][3]);
+void button_states(int buttons_pressed[3][3]);
 
 #endif
