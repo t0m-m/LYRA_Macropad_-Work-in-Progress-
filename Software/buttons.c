@@ -40,7 +40,7 @@ void init_buttons(){
 };
 
 //funkcja do skanowania matrycy
-int matrix_scan(int row_table[3], int column_table[3], int buttons_pressed[3][3]){
+void matrix_scan(int row_table[3], int column_table[3], int buttons_pressed[3][3]){
     for(int x = 0; x <= 2; x++){
         //zerujemy jeden wiersz na raz
         gpio_put(row_table[x], 0);
