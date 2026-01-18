@@ -14,11 +14,13 @@
 
 int main()
 {   
-    int buttons_pressed[3][3];
+    int raw_state[3][3];
     int row_table[3] = {ROW_0, ROW_1, ROW_2};
     int column_table[3] = {COL_0, COL_1, COL_2};
 
     stdio_init_all();
+    tusb_init();
+    board_init();
 
     // I2C Initialisation. Using it at 400Khz.
     i2c_init(I2C_PORT, 400*1000);
@@ -27,4 +29,11 @@ int main()
     gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
     gpio_pull_up(I2C_SDA);
     gpio_pull_up(I2C_SCL);
+
+    while(1){
+        tud_task();
+        //tu beda nasze funkcje 
+
+    }
+    return 0;
 }
