@@ -4,8 +4,39 @@
 #include "hardware/timer.h"
 #include "hardware/clocks.h"
 #include "buttons.h"
+#include "tusb.h"
+#include "class/hid/hid.h"
+#include <stdint.h>
+
 
 #define DEBOUNCE_TICKS 5 // ile kolejnych spojnych odczytow uznajemy za stabilne
+
+uint8_t keycode_map[9] = {
+    HID_KEY_F13, // key_id 0
+    HID_KEY_F14, // key_id 1
+    HID_KEY_F15, // key_id 2
+    HID_KEY_F16,   // key_id 3
+    HID_KEY_F17,   // key_id 4
+    HID_KEY_F18,   // key_id 5
+    HID_KEY_F19,   // key_id 6
+    HID_KEY_F20,   // key_id 7
+    HID_KEY_F21    // key_id 8
+};
+
+uint8_t modifier_map[9] = {
+    0,                // F13
+    0,                // F14
+    0,                // F15
+    KEYBOARD_MODIFIER_LEFTCTRL, // Ctrl+A
+    0,
+    0,
+    0,
+    0,
+    0
+};
+
+
+
 
 //inicjalizacja przyciskow
 void init_buttons(){
@@ -70,7 +101,9 @@ void button_states(int raw_state[3][3]){
     //static, poniewaz funkcja bedzie pamietac tablice i nie bedzie tworzyc nowej za kazdym jej wywolaniem 
     static int debounced_state[3][3] = {0}; //stabilny stan klawisza, po debouncingu
     static int counter[3][3] = {0}; //licznik stabilnosci dla kazdego klawisza
-    
+    int key_id;
+    int keycode[6];
+
     for(int x = 0; x < 3; x++){
         for(int y = 0; y < 3; y++){
 
@@ -82,9 +115,13 @@ void button_states(int raw_state[3][3]){
                     counter[x][y] = 0;
 
                     if (debounced_state[x][y] == 1) {
+                        key_id = x * 3 + y;
+                        keycode[0] = keycode_map[key_id]; keycode[1] = 0; keycode[2] = 0; keycode[3] = 0; keycode[4] = 0; keycode[5] = 0;
+                        tud_hid_keyboard_report(0, modifier_map[key_id], keycode);
                         // KEY DOWN (stabilnie wcisniety)
                         // wysylamy raport HID
                     } else {
+                        tud_hid_keyboard_report(NULL, NULL, NULL);
                         // KEY UP (stabilnie puszczony)
                         // ewentualny raport HID na puszczenie klawisza
                     }
