@@ -155,6 +155,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document7]
+DocumentPath=Job3.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [ProjectVariant1]
 UniqueId=f775682b-9b3f-4c69-a28c-9924616b8d1d
 Description=LYRA Prototype
@@ -189,63 +206,63 @@ DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Free Documents\NC Drill\PCB1.LDP
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for LYRA_Macropad\NC Drill\PCB1.LDP
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for Free Documents\Gerber\PCB1.REP
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.REP
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Free Documents\NC Drill\PCB1.TXT
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GM
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for LYRA_Macropad\NC Drill\PCB1.TXT
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Copper_Signal_Bot.gbr
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Copper_Signal_Top.gbr
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Legend_Bot.gbr
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Legend_Top.gbr
+DocumentPath=Project Outputs for Free Documents\NC Drill\PCB1.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Paste_Bot.gbr
+DocumentPath=Project Outputs for LYRA_Macropad\NC Drill\PCB1.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Paste_Top.gbr
+DocumentPath=Project Outputs for Free Documents\Gerber\PCB1.REP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Profile.gbr
+DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1.REP
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Soldermask_Bot.gbr
+DocumentPath=Project Outputs for Free Documents\NC Drill\PCB1.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for LYRA_Macropad\Gerber\PCB1_Soldermask_Top.gbr
+DocumentPath=Project Outputs for LYRA_Macropad\NC Drill\PCB1.TXT
 DItemRevisionGUID=
 
 [Configuration1]
