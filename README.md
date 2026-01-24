@@ -68,3 +68,7 @@ Bottom View
 # Update - 13.01.2026
 
 Unfortunately there's been a mistake in schematic and switch built in the rotary encoder and top left corner switch are connected between the same row and column, therefore the computer will be unable to tell which is which, so they act like the same button. Fortunately, the rotary action of the encoder is wired correctly. Started working on software.
+
+# Update - 24.01.2026
+
+Updated schematics as well as the production files so that the encoder works properly and is now connected between ROW_-1 and COL_0. Moved the OLED and the encoder a bit higher since they are getting in the way a little bit. Still working on writing USB HID firmware, but because of my finals it may take some time...
