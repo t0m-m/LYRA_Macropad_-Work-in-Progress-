@@ -35,6 +35,10 @@ Designed for QMK/VIA or custom firmware (in the making)
 
 * Case design refinements for 3D printing or CNC milling
 
+# Schematic
+
+<img width="1778" height="1177" alt="image" src="https://github.com/user-attachments/assets/cd180d5d-ebee-4933-8e6d-74324922af25" />
+
 # PCB Top Side View
 
 This PCB is only for prototyping purposes. The final build will feature MCU directly on the PCB without the development board.
