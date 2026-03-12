@@ -49,12 +49,6 @@ This PCB is only for prototyping purposes. The final build will feature MCU dire
 
 <img width="856" height="1097" alt="image" src="https://github.com/user-attachments/assets/7d2ac949-f14a-4330-ae81-ade45182466d" />
 
-# Update - 04.11.2025
-
-Moved diodes from top layer to the bottom. Added diode to the encoder. Added hotswap sockets to switches for quick and easy replacement. Added mounting holes for case. (Below is the bottom side of the board)
-
-<img width="1273" height="1184" alt="image" src="https://github.com/user-attachments/assets/fd10bc57-435f-4a0a-95c3-5d14a696481f" />
-
 # Update - 11.11.2025
 
 Replaced Arduino Micro with Seeed Xiao RP2040. Upgrading to this microcontroller led to smaller board size and lower cost. Board will be sent to production soon.
